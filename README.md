@@ -16,6 +16,7 @@
 
 
 # Java Spring microservice
+trigger test
 
 In this sample application, you will create a basic Java web application using Spring. This provides a starting point for creating Java microservice applications running on [Spring](https://spring.io/). It contains no default application code, but comes with standard best practices, including a health check and application metric monitoring.
 
@@ -25,19 +26,19 @@ Capabilities are provided through dependencies in the `pom.xml` file. The ports 
 
 You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=1298bc4e-4764-390b-a9eb-e4dcf3cc03ad) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
 
-### Deploying 
+### Deploying
 
 After you have created a new git repo from this git template, remember to rename the project.
 Edit `package.json` and change the default name to the name you used to create the template.
 
-Make sure you are logged into the IBM Cloud using the IBM Cloud CLI and have access 
+Make sure you are logged into the IBM Cloud using the IBM Cloud CLI and have access
 to you development cluster. If you are using OpenShift make sure you have logged into OpenShift CLI on the command line.
 
 ```$bash
 npm i -g @garage-catalyst/ibm-garage-cloud-cli
 ```
 
-Use the IBM Garage for Cloud CLI to register the GIT Repo with Jenkins 
+Use the IBM Garage for Cloud CLI to register the GIT Repo with Jenkins
 ```$bash
 igc pipeline
 ```
@@ -53,7 +54,7 @@ To get started building this application locally, you can either run the applica
   * [Java 11 JDK from Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
     or [Download a Liberty server package](https://developer.ibm.com/assets/wasdev/#filter/assetTypeFilters=PRODUCT)
     that contains the IBM JDK (Windows, Linux)
-    
+
 To build and run an application:
 1. `./gradlew build`
 2. `./gradlew bootRun`
