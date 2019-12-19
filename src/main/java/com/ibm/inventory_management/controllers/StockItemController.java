@@ -9,7 +9,7 @@ import com.ibm.inventory_management.models.StockItem;
 import com.ibm.inventory_management.services.StockItemApi;
 
 @RestController
-public class StockItemCnpm ontroller {
+public class StockItemController {
 
     private final StockItemApi service;
 
